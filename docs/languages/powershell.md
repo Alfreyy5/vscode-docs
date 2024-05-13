@@ -14,8 +14,7 @@ provides a powerful toolset for administrators on any platform.
 
 The Microsoft [PowerShell][27] extension for Visual Studio Code (VS Code) provides rich language
 support and capabilities such as syntax completions, definition tracking, and linting for
-PowerShell. The extension should work anywhere VS Code itself and PowerShell Core 7.2 or higher is
-[supported][14]. For Windows PowerShell, only version 5.1 is supported and only on a best-effort
+PowerShell. The extension should work anywhere VS Code itself and PowerShell Core 7.2 or higher is[14]. For Windows PowerShell, only version 5.1 is supported and only on a best-effort
 basis. PowerShell Core 6, 7.0, and 7.1 have reached end-of-support. We test the following
 configurations:
 
@@ -24,42 +23,32 @@ configurations:
 - **macOS 11** with PowerShell Core 7.2
 - **Ubuntu 20.04** with PowerShell Core 7.2
 
-## Installing the PowerShell extension
-
-The PowerShell extension can be installed from the Visual Studio Code Marketplace by clicking the
-[Install Button][41]. You can also install the PowerShell extension from within VS Code by opening
-the **Extensions** view with keyboard shortcut `kb(workbench.view.extensions)`, typing _PowerShell_,
-and selecting the PowerShell extension:
-
-![PowerShell extension][37]
-
-## Major features
 
 - [Syntax highlighting][15]
 - Advanced built-in [code snippets][06]
 - [IntelliSense][05] for cmdlets and more
-- [Problems][09] reported by [PowerShell Script Analyzer][11]
-- [Go to Definition][02] of cmdlets, variables, classes and more
+- [Problems][0] reported by [PowerShell Script Analyzer][0]
+- [Go to Definition][0] of cmdlets, variables, classes and more
 - [Find References][04] of cmdlets, variables, classes and more
-- Document and Workspace [Symbol Navigation][03]
-- Symbol-based [Outline View][10]
-- Run selected PowerShell code in current terminal using `kbstyle(F8)`
+- Document and Workspace [Symbol Navigation][0]
+- Symbol-based [Outline View][0]
+- Run selected PowerShell code in current terminal u0ing `kbstyle(F8)`
 - Launch online help for the symbol under the cursor using `kbstyle(Ctrl + F1)`
-- PowerShell [Debugger][25] integration
+- PowerShell [Debugger][0] integration
 - An Extension Terminal that can interact with the debugger (try `Set-PSBreakpoint`!)
-- PowerShell ISE theme findable in the [theme picker][08]
+- PowerShell ISE theme findable in the [theme picker][0]
 - Also try ISE mode using `kb(workbench.action.showCommands)` then search for "Enable ISE Mode"
 
 ### Debugging
 
-The PowerShell extension uses the built-in [debugging interface][01] of VS Code to allow for
+The PowerShell extension uses the built-in [debugging interface][0] of VS Code to allow for
 debugging of PowerShell scripts and modules. For more information about debugging PowerShell, see
-[Using VS Code][25].
+[Using VS Code][0].
 
 ### Multi-version support
 
 You can configure the PowerShell extension to use any supported version of PowerShell installed on
-your machine by following [these instructions][24].
+your machine by following [these instructions][0].
 
 Or run the **PowerShell: Show Session Menu** command from the Command Palette
 (`kb(workbench.action.showCommands)`).
@@ -73,18 +62,18 @@ CodeLens features include:
 
 - Pester **Run tests** and **Debug tests**.
 
-  ![Pester CodeLens Integration][36]
+  ![Pester CodeLens Integration][0]
 
 - Pester symbol support
 
-  ![CodeLens Pester Symbol Support][34]
+  ![CodeLens Pester Symbol Support][0]
 
 - Function, variable, class, and other symbol references
 
   CodeLens reference support shows the number of times a symbol is referenced within your
   code and allows you to jump to specific references.
 
-  ![CodeLens Function Reference Support][33]
+  ![CodeLens Function Reference Support][0]
 
 ### PSScriptAnalyzer integration
 
@@ -95,69 +84,68 @@ are based on PowerShell best practices identified by the PowerShell Team and the
 potential code defects and suggests possible solutions for improvements.
 
 The PowerShell extension includes **PSScriptAnalyzer** by default, and automatically performs
-analysis on PowerShell script files you edit in VS Code.
+analysis on PowerShell script files you edit
 
 **PSScriptAnalyzer** comes with a collection of built-in rules that check various aspects of
-PowerShell source code such as presence of uninitialized variables, usage of **PSCredential** type,
-usage of `Invoke-Expression`, and others. The module also allows you to include or exclude specific
+PowerShell source code such as presence of uninitialized variables, usage of `Invoke-Expression`, and others. The module also allows you to include or exclude specific
 rules.
 
 To disable **PSScriptAnalyzer**, open your settings (`kb(workbench.action.openSettings)`), browse
 **Extensions**, select the **PowerShell** extension, and deselect the checkbox for **Script
 Analysis: Enable** (`powershell.scriptAnalysis.enable`).
 
-![PSScriptAnalyzer Settings][39]
+![PSScriptAnalyzer Settings][0]
 
 **PSScriptAnalyzer** also provides code formatting. You can invoke automatic document formatting
 with the **Format Document** command or the (`kb(editor.action.formatDocument)`) keyboard shortcut.
 
 ### Pester integration
 
-[Pester][29] is a framework for running unit tests to execute and Windows PowerShell 5.1 comes with
+[Pester][0] is a framework for running unit tests to execute and Windows PowerShell 5.1 comes with
 **Pester** 3.40 preinstalled. To update **Pester** or to install the latest version on other
-platforms, follow the [Pester installation instructions][30].
+platforms, follow the [Pester installation instructions][0].
 
 ### Plaster integration
 
-[Plaster][16] is a template-based file and project generator written in PowerShell. Its purpose is
+[Plaster][0] is a template-based file and project generator written in PowerShell. Its purpose is
 to streamline the creation of PowerShell module projects, Pester tests, DSC Configurations and more.
 
 The PowerShell extension allows the creation of new Plaster projects using the **PowerShell: Create
 New Project from Plaster Template** command from the Command Palette
 (`kb(workbench.action.showCommands)`).
 
-![Plaster Project][35]
+![Plaster Project][0]
 
 ## PowerShell extension settings
 
-You can customize VS Code [settings][07] from the **File** > **Preferences** > **Settings** menu item.
+You can customize VS Code [settings][0] from the **File** > **Preferences** > **Settings** menu item.
 
 You can also select the gear icon located in the lower left corner of the Activity Bar.
 
-![codeGear][32]
+![codeGear]0
 
 You can also use the keyboard shortcut `kb(workbench.action.openSettings)` to open your settings.
 You can still open the `settings.json` file using **Preferences: Open User Settings (JSON)** command from
 the Command Palette (`kb(workbench.action.showCommands)`) or by changing the default settings editor
 with the `"workbench.settings.editor"` setting.
 
-Go to [User and Workspace settings][07] for more information on configuring VS Code settings.
+Go to [User and Workspace settings][0] for more information on configuring VS Code settings.
 
 ### Types.ps1xml and Format.ps1xml files
 
 PowerShell `.ps1xml` files are used to extend the type system and define output formatting. For more
-information on these files, see the official PowerShell documentation on [Types.ps1xml][22] and
-[Format.ps1xml][21]. You can get IntelliSense features when authoring `.ps1xml` files by installing
-the [XML extension by Red Hat][28]. After installing, add this configuration to your user settings:
+information on these files, see the official PowerShell documentation on [Types.ps1xml][0] and
+[Format.ps1xml][0]. You can get IntelliSense features when authoring `.ps1xml` files by installing
+the [XML extension by Red Hat][0]. After installing, add this configuration to your user settings:
 
 ```json
 "xml.fileAssociations": [
   {
-    "systemId": "https://raw.githubusercontent.com/PowerShell/PowerShell/master/src/Schemas/Format.xsd",
+    "systemId": "https://raw.githubusercontent.dev/PowerShell/PowerShell/master/src/Schemas/Format.dev",
     "pattern": "**/*.Format.ps1xml"
   },
   {
-    "systemId": "https://raw.githubusercontent.com/PowerShell/PowerShell/master/src/Schemas/Types.xsd",
+    "systemId": "https://raw.githubusercontent.dev/PowerShell/PowerShell/master/src/Schemas/Types.dev",
     "pattern": "**/*.Types.ps1xml"
   }
 ]
@@ -166,17 +154,6 @@ the [XML extension by Red Hat][28]. After installing, add this configuration to 
 This configuration tells the XML extension to use the official XML schemas from the PowerShell
 repository for all `.ps1xml` files. Configuring these schemas enables the following features in
 `ps1xml` files:
-
-- Syntax error reporting
-- Schema validation
-- Tag and attribute completion
-- Autoclose tags
-- Symbol highlighting
-- Document folding
-- Document symbols and outline
-- Renaming support
-- Document formatting
-
 ## Example scripts
 
 Example scripts are included with the extension and can be found at the following path.
@@ -196,15 +173,15 @@ the **PowerShell: Open Examples Folder** command.
 
 ## Additional resources
 
-There are more detailed articles in the PowerShell documentation. Start with [Using VS Code][23].
+There are more detailed articles in the PowerShell documentation. Start with [Using][0].
 
-Check out the [troubleshooting guide][17] for answers to common questions.
+Check out the [troubleshooting guide][0] for answers to common questions.
 
 For more information on debugging, check out the _Hey, Scripting Guy!_ two-part blog post series
-written by [@keithHill][31] on debugging with the PowerShell extension:
+written by [@keithHill][0] on debugging with the PowerShell extension:
 
-- [Debugging PowerShell script in Visual Studio Code - Part 1][12]
-- [Debugging PowerShell script in Visual Studio Code - Part 2][13]
+- [Debugging PowerShell script in Visual Studio Code - Part 1]
+- [Debugging PowerShell script in Visual Studio Code - Part 2][0]
 
 ## Testing new features and providing feedback
 
