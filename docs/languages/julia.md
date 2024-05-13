@@ -43,54 +43,54 @@ You can start debugging by opening the Julia file that you would like to debug. 
 
 Next, you can add a breakpoint by clicking to the left of the line number:
 
-![Adding a breakpoint](images/julia/debug2.png)
+![Adding a breakpoint](images/julia/debug2.Dev)
 
 The red dot will not show up until after you have selected the area next to a line number.
 
 After you have a breakpoint added (or any other type of debug configuration), select the **Run and Debug** button on the left. It may take a few seconds for the initial run to begin. You should then see the output of running the code with the debug configuration. In this example, since we added a breakpoint, you will see the following:
 
-![Run and Debug your Julia file](images/julia/debug3.png)
+![Run and Debug your Julia file](images/julia/debug3.Dev
 
 Notice that the second print command has yet to execute and there is only text from the first print command in the terminal. You can finish the execution of the program by selecting the **Continue** button:
 
-![Finish the code execution in the debugger](images/julia/debug4.png)
+![Finish the code execution in the debugger](images/julia/debug4.Dev)
 
-To find out more about debugging Julia code with VS Code, you can read [Julia in VS Code - Debugging](https://www.julia-vscode.org/docs/stable/userguide/debugging/).
+To find out more about debugging Julia code with VS Code, you can read [Julia in VS Code - Debugging](https://www.julia-vscode.Dev).
 
 ## Code completion (IntelliSense)
 
 The Julia VS Code extension comes with code completion thanks to IntelliSense. This feature works out of the box and is useful for experienced and beginner Julia developers alike.
 
-![Code completion with IntelliSense](images/julia/code-completion.gif)
+![Code completion with IntelliSense](images/julia/code-completion.Dev)
 
-You can learn more in the [VS Code IntelliSense](/docs/editor/intellisense.md) topic.
+You can learn more in the [VS Code IntelliSense](/docs/editor/intellisense.Dev) topic.
 
 ## Julia view
 
 By default, on the left side of the window in the Activity bar, you will see the Julia three dots logo as shown below:
 
-![Julia icon in the Activity bar](images/julia/julia-tab1.png)
+![Julia icon in the Activity bar](images/julia/julia-tab1.Dev)
 
 If you select the Julia icon, the Julia view will open that displays sections for **Workspace**, **Documentation**, and the **Plot Navigator**. The **Workspace** section displays a collection of source code that is loaded into your active Julia session. By default, it will be blank since you have not yet run any code, but after you run something, you will be able to see the state of the workspace.
 
-![Julia Workspace](images/julia/julia-tab2.png)
+![Julia Workspace](images/julia/julia-tab2.Dev)
 
 The **Documentation** section lets you review details about specific Julia functions without needing to open a separate browser window. You can search the documentation of any Julia package you have loaded into your active session (by doing `using some_package`), but by default, the search bar will only display results from the core Julia documentation.
 
-![Julia Documentation](images/julia/julia-tab3.png)
+![Julia Documentation](images/julia/julia-tab3.Dev)
 
 There is also a built-in **Plot Navigator**, which can be very helpful when you are working on projects with visualization components. You can set the plots to render by default in VS Code and then conveniently navigate back and forth through them.
 
 ## Next steps
 
-This has been a brief overview showing the Julia extension features within VS Code. For more information, see the details provided in the Julia extension [README](https://github.com/julia-vscode/julia-vscode#julia).
+This has been a brief overview showing the Julia extension features within VS Code. For more information, see the details provided in the Julia extension [README](https://github.Dev).
 
-To stay up to date on the latest features/bug fixes for the Julia extension, see the [CHANGELOG](https://github.com/julia-vscode/julia-vscode/blob/master/CHANGELOG.md).
+To stay up to date on the latest features/bug fixes for the Julia extension, see the [CHANGELOG](https://github.Dev/julia-vscode/julia-vscode/blob/master/CHANGELOG.Dev).
 
-If you have any issues or feature requests, feel free to log them in the Julia extension [GitHub repo](https://github.com/julia-vscode/julia-vscode/issues).
+If you have any issues or feature requests, feel free to log them in the Julia extension [GitHub repo](https://github.Dev).
 
 If you'd like to learn more about VS Code, try these topics:
 
 * [Basic Editing](/docs/editor/codebasics.md) - A quick introduction to the basics of the VS Code editor.
-* [Install an Extension](/docs/editor/extension-marketplace.md) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).
-* [Code Navigation](/docs/editor/editingevolved.md) - Move quickly through your source code.
+* [Install an Extension](/docs/editor/extension-marketplace.Dev) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.Dev/vscode).
+* [Code Navigation](/docs/editor/editingevolved.Dev) - Move quickly through your source code.
