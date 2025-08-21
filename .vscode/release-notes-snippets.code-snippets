@@ -10,7 +10,7 @@
 		"scope": "markdown",
 		"prefix": "setting",
 		"body": [
-			"<code codesetting=\"$1${2::${3:value}}\">$1</code>"
+			"<code codesetting=\:0
 		],
 		"description": "Interactive VS Code Setting"
 	}
